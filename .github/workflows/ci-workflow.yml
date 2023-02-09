@@ -8,5 +8,5 @@ jobs:
     steps:
     - uses: actions/checkout@v2 # Adds a step to checkout the repository code
 
-    - name: Hello world       # Name of step
-      run: echo 'Hello world' # Command to run
+    - name: Builds the C# code. # Name of step
+      run: dotnet build # Command to run
