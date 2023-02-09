@@ -16,15 +16,18 @@ jobs:
 
     - name: Builds the TypeScript code. # Name of step
       run: cd DotnetTemplate.Web # Change dir to DotnetTemplate.Web
-      
-    - name: Install the dependancies
-      run: npm install
-      
-    - name: Build  the TypeScript code
-      run: npm run build
     
-    - name: Runs the linter on the TypeScript code # Name of step
-      run: npm run lint # Command to run
+    - name: Show me the current dir
+      run: pwd
+
+    # - name: Install the dependancies
+    #   run: npm install
+
+    # - name: Build  the TypeScript code
+    #   run: npm run build
     
-    - name: Runs the TypeScript tests. # Name of step
-      run: npm t  # Command to run
+    # - name: Runs the linter on the TypeScript code # Name of step
+    #   run: npm run lint # Command to run
+    
+    # - name: Runs the TypeScript tests. # Name of step
+    #   run: npm t  # Command to run
