@@ -5,6 +5,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building..'
+                sh 'echo pwd'
                 sh 'dotnet build'
             }
         }
