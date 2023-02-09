@@ -14,12 +14,6 @@ jobs:
     - name: Runs the C# tests. # Name of step
       run: dotnet test # Command to run
 
-    # - name: Builds the TypeScript code. # Name of step
-    #   run: cd DotnetTemplate.Web # Change dir to DotnetTemplate.Web
-    
-    # - name: Show me the current dir
-    #   run: pwd
-
     - name: Install the dependancies
       working-directory: ./DotnetTemplate.Web
       run: npm install
